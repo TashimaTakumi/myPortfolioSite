@@ -6,6 +6,7 @@
 <link href="css/index.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="js/scroll.js"></script>
 <script type="text/javascript" src="js/tab.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
 </head>
 
 <body>
@@ -21,41 +22,52 @@
 			</ul>
         </nav>
 	</header>
-	
+
 	<div id="mainVis">
 		<img id="topimg" src="images/index/topimg.png">
 		<h1 class="top" id="name">TashimaTakumi</h1>
 		<h3 class="top" id="keyword">夢中を探す。</h3>
 	</div>
-	
+
 	<div id="nextbutton">
 		<a href="#informations" data-scroll><img src="images/index/nextbutton.png"></a>
 	</div>
-	
+
 	<div id="selecter">
 		<input id="b1" class="button" type="button" value="works" onclick="disp(0)">
 		<input id="b2" class="button" type="button" value="profile" onclick="disp(1)">
 		<input id="b3" class="button" type="button" value="contact" onclick="disp(2)">
 	</div>
-	
+
 	<div id="informations">
 		<div id="works">
 			<div id="new_gallery">
 				<table border="0">
 					<tr>
-						<td><a href="lamp.html"><img class="type1" src="images/index/b_lamp.png" onMouseOut="this.src='images/index/b_lamp.png'" onMouseOver="this.src='images/index/lamp.png'"></a></td>
-						<td><a href="memorial.html"><img class="type2" src="images/index/b_ojisan.png" onMouseOut="this.src='images/index/b_ojisan.png'" onMouseOver="this.src='images/index/ojisan.png'"></a></td>
-						<td><a href="spot.html"><img class="type2" src="images/index/b_spot.png" onMouseOut="this.src='images/index/b_spot.png'" onMouseOver="this.src='images/index/spot.png'"></a></td>
-						<td><a href="lamp.html"><img class="type1" src="images/index/b_lamp.png" onMouseOut="this.src='images/index/b_lamp.png'" onMouseOver="this.src='images/index/lamp.png'"></a></td>
+						<td><img class="type1 modal_button" src="images/index/b_lamp.png" onMouseOut="this.src='images/index/b_lamp.png'" onMouseOver="this.src='images/index/lamp.png'"></td>
+						<td><img class="type2 modal_button" src="images/index/b_ojisan.png" onMouseOut="this.src='images/index/b_ojisan.png'" onMouseOver="this.src='images/index/ojisan.png'"></td>
+						<td><img class="type2 modal_button" src="images/index/b_spot.png" onMouseOut="this.src='images/index/b_spot.png'" onMouseOver="this.src='images/index/spot.png'"></td>
+						<td><img class="type1 modal_button" src="images/index/b_lamp.png" onMouseOut="this.src='images/index/b_lamp.png'" onMouseOver="this.src='images/index/lamp.png'"></td>
 					</tr>
 					<tr>
-						<td><a href="lamp.html"><img class="type1" src="images/index/b_lamp.png" onMouseOut="this.src='images/index/b_lamp.png'" onMouseOver="this.src='images/index/lamp.png'"></a></td>
-						<td><a href="memorial.html"><img class="type2" src="images/index/b_ojisan.png" onMouseOut="this.src='images/index/b_ojisan.png'" onMouseOver="this.src='images/index/ojisan.png'"></a></td>
-						<td><a href="spot.html"><img class="type2" src="images/index/b_spot.png" onMouseOut="this.src='images/index/b_spot.png'" onMouseOver="this.src='images/index/spot.png'"></a></td>
-						<td><a href="lamp.html"><img class="type1" src="images/index/b_lamp.png" onMouseOut="this.src='images/index/b_lamp.png'" onMouseOver="this.src='images/index/lamp.png'"></a></td>
+						<td><img class="type1 modal_button" src="images/index/b_lamp.png" onMouseOut="this.src='images/index/b_lamp.png'" onMouseOver="this.src='images/index/lamp.png'"></td>
+						<td><img class="type2 modal_button" src="images/index/b_ojisan.png" onMouseOut="this.src='images/index/b_ojisan.png'" onMouseOver="this.src='images/index/ojisan.png'"></td>
+						<td><img class="type2 modal_button" src="images/index/b_spot.png" onMouseOut="this.src='images/index/b_spot.png'" onMouseOver="this.src='images/index/spot.png'"></td>
+						<td><img class="type1 modal_button" src="images/index/b_lamp.png" onMouseOut="this.src='images/index/b_lamp.png'" onMouseOver="this.src='images/index/lamp.png'"></td>
 					</tr>
 				</table>
 			</div>
+		</div>
+
+		<div id="memorial_modal_window" class="hidden">
+			
+			<script language="JavaScript" type="text/javascript">
+				function getWidth(){
+					return window.innerWidth;
+				}
+			</script>
+				
+			<iframe src="memorial.html" frameborder="1" scrolling="auto" width="getWidth()"></iframe>
 		</div>
 
 		<div id="profile">
@@ -125,7 +137,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<footer id="copyright">
 		<p >Copyright (C) Tashima Takumi, All rights reserved.</p>
 	</footer>

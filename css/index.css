@@ -80,7 +80,6 @@ nav li{
 #nextbutton{
 	text-align: center;
 	width:100%;
-	//width:100vw;
 	margin:1vh 0 5vh 0;
 }
 
@@ -172,6 +171,21 @@ nav li{
 }
 #bottom{
 	padding-top:calc(94vw/5/3);
+}
+
+.memorial_modal_window{
+	width:90vw;
+	height:auto;
+}
+
+.memorial_model_windows iframe{
+	width:90vw;
+	position: fixed;
+	
+}
+
+.hidden{
+	display: none;
 }
 
 

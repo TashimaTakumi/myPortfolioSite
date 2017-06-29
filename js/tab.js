@@ -9,11 +9,11 @@ window.onload=function(){
 	b1=document.getElementById("b1");
 	b2=document.getElementById("b2");
 	b3=document.getElementById("b3");
-	
+
 	disp(1);
 };
 function disp(n){
-	
+
 	w.style.display="none";
 	p.style.display="none";
 	c.style.display="none";
