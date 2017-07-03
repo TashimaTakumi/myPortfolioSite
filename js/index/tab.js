@@ -2,7 +2,7 @@
 var w=Object();var p=Object();var c=Object();
 var b1=Object();var b2=Object();var b3=Object();
 
-window.onload=function(){
+function tab_init(){
 	w=document.getElementById("works");
 	p=document.getElementById("profile");
 	c=document.getElementById("contact_form");

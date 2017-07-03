@@ -1,4 +1,4 @@
-window.onload=function(){
+function modal_init(){
   var toggle_buttons =document.getElementsByClassName("modal_button");
   for(var i=0;i<toggle_buttons.length;i++){
     toggle_buttons[i].addEventListener("click",toggleWindow);

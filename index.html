@@ -4,9 +4,22 @@
 <meta charset="utf-8">
 <title>TashimaTakumi</title>
 <link href="css/index.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="js/scroll.js"></script>
-<script type="text/javascript" src="js/tab.js"></script>
-<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/index/scroll.js"></script>
+<script type="text/javascript" src="js/index/tab.js"></script>
+<script type="text/javascript" src="js/index/modal.js"></script>
+<script type="text/javascript">
+	addOnload(modal_init);
+	addOnload(tab_init);
+	
+	function addOnload(func){
+		try{
+			window.addEventListener("load",func,false);
+		}catch(e){
+			window.attachEvent("onload",func);
+		}
+	}
+	
+</script>
 </head>
 
 <body>
@@ -59,15 +72,9 @@
 			</div>
 		</div>
 
-		<div id="memorial_modal_window" class="hidden">
-			
-			<script language="JavaScript" type="text/javascript">
-				function getWidth(){
-					return window.innerWidth;
-				}
-			</script>
-				
-			<iframe src="memorial.html" frameborder="1" scrolling="auto" width="getWidth()"></iframe>
+		<div id="memorial_modal_window" class="hidden">	
+			<p class="modal_button">閉じる</p>			
+			<iframe src="memorial.html" frameborder="1" scrolling="auto" align="middle"></iframe>
 		</div>
 
 		<div id="profile">
@@ -82,11 +89,6 @@
 					<div id="hiragana">
 						<h2>たしま　たくみ</h2>
 					</div>
-					<!--
-					<div id="from">
-						<p>青森県立八戸商業高等学校<br>公立はこだて未来大学</p>
-					</div>
-					-->
 				</div>
 				<div id="goodat">
 					<div id="programming">
