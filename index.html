@@ -4,8 +4,22 @@
 <meta charset="utf-8">
 <title>TashimaTakumi</title>
 <link href="css/index.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="js/scroll.js"></script>
-<script type="text/javascript" src="js/tab.js"></script>
+<script type="text/javascript" src="js/index/scroll.js"></script>
+<script type="text/javascript" src="js/index/tab.js"></script>
+<script type="text/javascript" src="js/index/modal.js"></script>
+<script type="text/javascript">
+	addOnload(modal_init);
+	addOnload(tab_init);
+	
+	function addOnload(func){
+		try{
+			window.addEventListener("load",func,false);
+		}catch(e){
+			window.attachEvent("onload",func);
+		}
+	}
+	
+</script>
 </head>
 
 <body>
@@ -21,41 +35,46 @@
 			</ul>
         </nav>
 	</header>
-	
+
 	<div id="mainVis">
 		<img id="topimg" src="images/index/topimg.png">
 		<h1 class="top" id="name">TashimaTakumi</h1>
 		<h3 class="top" id="keyword">夢中を探す。</h3>
 	</div>
-	
+
 	<div id="nextbutton">
 		<a href="#informations" data-scroll><img src="images/index/nextbutton.png"></a>
 	</div>
-	
+
 	<div id="selecter">
 		<input id="b1" class="button" type="button" value="works" onclick="disp(0)">
 		<input id="b2" class="button" type="button" value="profile" onclick="disp(1)">
 		<input id="b3" class="button" type="button" value="contact" onclick="disp(2)">
 	</div>
-	
+
 	<div id="informations">
 		<div id="works">
 			<div id="new_gallery">
 				<table border="0">
 					<tr>
-						<td><img class="type1" src="images/index/b_lamp.png" onMouseOut="this.src='images/index/b_lamp.png'" onMouseOver="this.src='images/index/lamp.png'"></td>
-						<td><img class="type2" src="images/index/b_ojisan.png" onMouseOut="this.src='images/index/b_ojisan.png'" onMouseOver="this.src='images/index/ojisan.png'"></td>
-						<td><img class="type2" src="images/index/b_spot.png" onMouseOut="this.src='images/index/b_spot.png'" onMouseOver="this.src='images/index/spot.png'"></td>
-						<td><img class="type1" src="images/index/b_lamp.png" onMouseOut="this.src='images/index/b_lamp.png'" onMouseOver="this.src='images/index/lamp.png'"></td>
+						<td><img class="type1 modal_button" src="images/index/b_lamp.png" onMouseOut="this.src='images/index/b_lamp.png'" onMouseOver="this.src='images/index/lamp.png'"></td>
+						<td><img class="type2 modal_button" src="images/index/b_ojisan.png" onMouseOut="this.src='images/index/b_ojisan.png'" onMouseOver="this.src='images/index/ojisan.png'"></td>
+						<td><img class="type2 modal_button" src="images/index/b_spot.png" onMouseOut="this.src='images/index/b_spot.png'" onMouseOver="this.src='images/index/spot.png'"></td>
+						<td><img class="type1 modal_button" src="images/index/b_lamp.png" onMouseOut="this.src='images/index/b_lamp.png'" onMouseOver="this.src='images/index/lamp.png'"></td>
 					</tr>
 					<tr>
-						<td><img class="type1" src="images/index/b_lamp.png" onMouseOut="this.src='images/index/b_lamp.png'" onMouseOver="this.src='images/index/lamp.png'"></td>
-						<td><img class="type2" src="images/index/b_ojisan.png" onMouseOut="this.src='images/index/b_ojisan.png'" onMouseOver="this.src='images/index/ojisan.png'"></td>
-						<td><img class="type2" src="images/index/b_spot.png" onMouseOut="this.src='images/index/b_spot.png'" onMouseOver="this.src='images/index/spot.png'"></td>
-						<td><img class="type1" src="images/index/b_lamp.png" onMouseOut="this.src='images/index/b_lamp.png'" onMouseOver="this.src='images/index/lamp.png'"></td>
+						<td><img class="type1 modal_button" src="images/index/b_lamp.png" onMouseOut="this.src='images/index/b_lamp.png'" onMouseOver="this.src='images/index/lamp.png'"></td>
+						<td><img class="type2 modal_button" src="images/index/b_ojisan.png" onMouseOut="this.src='images/index/b_ojisan.png'" onMouseOver="this.src='images/index/ojisan.png'"></td>
+						<td><img class="type2 modal_button" src="images/index/b_spot.png" onMouseOut="this.src='images/index/b_spot.png'" onMouseOver="this.src='images/index/spot.png'"></td>
+						<td><img class="type1 modal_button" src="images/index/b_lamp.png" onMouseOut="this.src='images/index/b_lamp.png'" onMouseOver="this.src='images/index/lamp.png'"></td>
 					</tr>
 				</table>
 			</div>
+		</div>
+
+		<div id="memorial_modal_window" class="hidden">	
+			<p class="modal_button">閉じる</p>			
+			<iframe src="memorial.html" frameborder="1" scrolling="auto" align="middle"></iframe>
 		</div>
 
 		<div id="profile">
@@ -70,11 +89,6 @@
 					<div id="hiragana">
 						<h2>たしま　たくみ</h2>
 					</div>
-					<!--
-					<div id="from">
-						<p>青森県立八戸商業高等学校<br>公立はこだて未来大学</p>
-					</div>
-					-->
 				</div>
 				<div id="goodat">
 					<div id="programming">
@@ -115,7 +129,6 @@
 							<label for="msg">内容:</label>
 							<textarea id="msg" name="user_message"></textarea>
 						</div>
-
 						<div class="button">
 							<button type="submit">送信</button>
 						</div>
@@ -125,7 +138,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<footer id="copyright">
 		<p >Copyright (C) Tashima Takumi, All rights reserved.</p>
 	</footer>

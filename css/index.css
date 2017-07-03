@@ -1,250 +1,167 @@
 * {
-	margin: 0;
-	padding: 0;
-}
-body{
-	overflow-x :hidden;
-	font-family:  "YuGothic", 'Noto Sans Japanese', "Hiragino Kaku Gothic Pro", "Meiryo", "Osaka",'MS PGothic', sans-serif;
-	color:#000064;
-	background-color: #EAEAEA;
-}
+  margin: 0;
+  padding: 0; }
 
-p{
-	color:#768088;
-}
+body {
+  overflow-x: hidden;
+  font-family: "YuGothic", 'Noto Sans Japanese', "Hiragino Kaku Gothic Pro", "Meiryo", "Osaka",'MS PGothic', sans-serif;
+  color: #000064;
+  background-color: #EAEAEA; }
+  body p {
+    color: #768088; }
+  body header {
+    margin: 0 0 0 3vw;
+    width: 94vw;
+    height: 8vh; }
+    body header #sitename {
+      margin: 0;
+      margin-top: 2vh;
+      float: left;
+      width: 25vw; }
+      body header #sitename h1 {
+        margin: 0;
+        font-weight: lighter; }
+    body header nav {
+      float: right;
+      width: calc(100vw/4); }
+      body header nav ul {
+        padding: 0;
+        margin-top: 3vh; }
+        body header nav ul li {
+          padding-left: 3vw;
+          list-style-type: none;
+          display: inline-block;
+          text-align: center; }
+  body #mainVis {
+    position: relative;
+    margin: 0; }
+    body #mainVis .top {
+      position: absolute;
+      font-weight: lighter; }
+    body #mainVis #topimg {
+      width: 100%;
+      heihgt: auto; }
+    body #mainVis #name {
+      font-size: calc(50vw/13*1.1);
+      top: 28%;
+      left: 30%; }
+    body #mainVis #keyword {
+      font-size: calc(20vw / 6 / 1.5);
+      top: calc(30% + (50vw / 13) + 2%);
+      left: calc(30% + (50vw / 13)*5.25); }
+  body #nextbutton {
+    text-align: center;
+    width: 100%;
+    margin: 1vh 0 5vh 0; }
+  body #selecter {
+    width: 100vw;
+    display: inherit;
+    text-align: center; }
+    body #selecter .button {
+      font-size: 2vw;
+      font-weight: 300;
+      margin: 0 5vw; }
+  body #works {
+    margin-top: 15vh; }
+    body #works #new_gallery {
+      width: 94vw;
+      margin-left: 3vw; }
+      body #works #new_gallery table {
+        width: 100%; }
+        body #works #new_gallery table td {
+          text-align: center;
+          vertical-align: middle; }
+          body #works #new_gallery table td .first_pict {
+            padding: 0 calc(94vw/5/3/2) 0 0; }
+          body #works #new_gallery table td .middle_pict {
+            padding: 0 calc(94vw/5/3/2); }
+          body #works #new_gallery table td .last_pic {
+            padding: 0 0 0 calc(94vw/5/3/2); }
+          body #works #new_gallery table td .type1 {
+            width: calc(94vw/5); }
+          body #works #new_gallery table td .type2 {
+            height: calc(94vw/5); }
+  body #memorial_modal_window {
+    width: 95vw;
+    margin: 0 auto; }
+    body #memorial_modal_window iframe {
+      margin: 0 auto;
+      width: 95vw;
+      height: 100vh; }
+  body #profile {
+    margin-top: 15vh; }
+    body #profile #base {
+      width: 94vw;
+      margin-left: 3vw;
+      margin-top: 5vh;
+      position: relative; }
+    body #profile #face {
+      margin-right: calc(94vw/5/3); }
+      body #profile #face #faceimg {
+        width: calc(94vw/5); }
+    body #profile #myname h1, body #profile h2 {
+      font-weight: lighter; }
+      body #profile #myname h1 #kanji h1, body #profile h2 #kanji h1 {
+        position: absolute;
+        font-size: calc(94vw / 5 / 6);
+        top: 0%;
+        left: calc(94vw / 5 / 3 + 94vw / 5); }
+      body #profile #myname h1 #hiragana h2, body #profile h2 #hiragana h2 {
+        position: absolute;
+        font-size: calc(94vw/5/8);
+        top: calc(94vw / 5 / 6 - 94vw / 5 / 8);
+        left: calc((94vw / 5 / 3 + 94vw / 5)*2); }
+    body #profile #goodat p {
+      position: absolute;
+      font-size: calc(94vw/5/8/1.5); }
+      body #profile #goodat p #programming p {
+        top: calc(94vw / 5 / 6 - 94vw / 5 / 8);
+        left: calc((94vw / 5 / 3 + 94vw / 5)*3); }
+      body #profile #goodat p #goods p {
+        top: calc(94vw/5 - (94vw/5/8/1.5)*4);
+        left: calc((94vw / 5 / 3 + 94vw / 5)*3); }
+    body #profile #intro p {
+      text-align: center;
+      position: absolute;
+      font-size: calc(94vw/5/8/1.5);
+      top: calc(94vw/5 - (94vw/5/8/1.5)*5.5);
+      left: calc(((94vw / 5 / 3 + 94vw / 5) + ((94vw / 5 / 3 + 94vw / 5)*2)) / 3); }
+  body #contact_form {
+    margin-top: 15vh; }
+  body #filed {
+    margin-left: 3vw;
+    width: 94vw; }
+  body #copyright {
+    font-size: 1vw;
+    margin-left: 72vw;
+    margin-top: 25vh; }
 
-header{
-	margin:0 0 0 3vw;
-	width:94vw;
-	height:8vh;
-}
-#sitename{
-	margin:0;
-	margin-top:2vh;
-	float:left;
-	width:25vw;
-}
-#sitename h1{
-	margin: 0;
-	font-weight:lighter;
-}
-nav{
-	float:right;
-	width:calc(100vw/4);
-}
-.links{
-	font-size:calc(100vw/3.5/18);
-	text-decoration:none;
-	color:#768088;
-}
-nav ul{
-	padding: 0;
-	margin-top:3vh;
-}
-nav li{
-	padding-left:3vw;
-	list-style-type:none;
-	display: inline-block;
-	text-align: center;
-}
+.links {
+  font-size: calc(100vw/3.5/18);
+  text-decoration: none;
+  color: #768088; }
 
+.topictitle {
+  margin: 0 0 0 3vw;
+  width: 94vw;
+  text-align: center;
+  color: #768088;
+  border: solid;
+  border-color: #768088; }
+  .topictitle h2 {
+    font-weight: lighter;
+    margin: 0; }
 
+.button {
+  width: 10vw;
+  color: #EAEAEA;
+  text-align: center;
+  text-shadow: -1px -1px #555;
+  background-color: #CACACA;
+  border: hidden;
+  border-radius: 10px; }
+  .button:hover {
+    background-color: #000064; }
 
-
-#mainVis{
-	position: relative;
-	margin:0;
-}
-
-#topimg{
-	//width:100vw;
-	width:100%;
-	heihgt:auto;
-}
-.top{
-	position: absolute;
-	font-weight:lighter;
-}
-#name{
-	font-size: calc(50vw/13*1.1);
-	top:28%;
-	left:30%;
-}
-#keyword{
-	font-size: calc(20vw / 6 / 1.5);
-	top:calc(30% + (50vw / 13) + 2%);
-	left:calc(30% + (50vw / 13)*5.25);
-}
-
-
-#nextbutton{
-	text-align: center;
-	width:100%;
-	//width:100vw;
-	margin:1vh 0 5vh 0;
-}
-
-
-.topictitle{
-	margin:0 0 0 3vw;
-	width:94vw;
-	text-align: center;
-	color:#768088;
-	border: solid;
-	border-color: #768088;
-
-}
-
-.topictitle h2{
-	font-weight:lighter;
-	margin: 0;
-}
-
-#selecter{
-	width:100vw;
-	display:inherit;
-	text-align: center;
-}
-
-.button{
-	width:10vw;
-	color:#EAEAEA;
-	text-align: center;
-	text-shadow:-1px -1px #555;
-	background-color: #CACACA;
-	border:hidden;
-	border-radius: 10px;
-}
-
-
-.button:hover{
-	background-color:#000064;
-}
-
-#selecter .button{
-	font-size:2vw;
-	font-weight:300;
-	margin: 0 5vw;
-}
-
-
-#works{
-	margin-top:15vh;
-}
-#gallery{
-	margin-top:10vh;
-	width:94vw;
-	margin-left:3vw;
-}
-
-#new_gallery{
-	width:94vw;
-	margin-left:3vw;
-}
-#new_gallery table{
-	width:100%;
-}
-#new_gallery table td{
-	text-align:center;
-	vertical-align:middle;
-}
-.first_pict{
-	padding:0 calc(94vw/5/3/2) 0 0;
-}
-.middle_pict{
-	padding: 0 calc(94vw/5/3/2);
-}
-.last_pic{
-	padding:0 0 0 calc(94vw/5/3/2);
-}
-.type1{
-	width:calc(94vw/5);
-}
-.type2{
-	height:calc(94vw/5);
-}
-#gallery li{
-	list-style-type:none;
-	display: inline-block;
-	vertical-align: middle;
-	width:calc(94vw/5);
-	height:calc(94vw/5);
-}
-#bottom{
-	padding-top:calc(94vw/5/3);
-}
-
-
-#profile{
-	margin-top: 15vh;
-}
-
-#base{
-	width:94vw;
-	margin-left:3vw;
-	margin-top:5vh;
-	position: relative;
-}
-#face{
-	margin-right:calc(94vw/5/3);
-}
-#faceimg{
-	width:calc(94vw/5);
-}
-
-#myname h1,h2{
-	font-weight: lighter;
-}
-#kanji h1{
-	position: absolute;
-	font-size: calc(94vw / 5 / 6);
-	top:0%;
-	left:calc(94vw / 5 / 3 + 94vw / 5);
-}
-
-#hiragana h2{
-	position:absolute;
-	font-size:calc(94vw/5/8);
-	top:calc(94vw / 5 / 6 - 94vw / 5 / 8);
-	left:calc((94vw / 5 / 3 + 94vw / 5)*2);
-}
-
-#goodat p{
-	position: absolute;
-	font-size:calc(94vw/5/8/1.5);
-}
-#programming p{
-	top:calc(94vw / 5 / 6 - 94vw / 5 / 8);
-	left:calc((94vw / 5 / 3 + 94vw / 5)*3);
-}
-
-#goods p{
-	top:calc(94vw/5 - (94vw/5/8/1.5)*4);
-	left:calc((94vw / 5 / 3 + 94vw / 5)*3);
-}
-
-#intro p{
-	text-align: center;
-	position: absolute;
-	font-size: calc(94vw/5/8/1.5);
-	top:calc(94vw/5 - (94vw/5/8/1.5)*5.5);
-	left:calc(((94vw / 5 / 3 + 94vw / 5) + ((94vw / 5 / 3 + 94vw / 5)*2)) / 3);
-}
-
-
-
-
-#contact_form{
-	margin-top: 15vh;
-}
-
-#filed{
-	margin-left:3vw;
-	width:94vw;
-}
-
-#copyright{
-	font-size:1vw;
-	margin-left:72vw;
-	margin-top: 25vh;
-}
+.hidden {
+  display: none; }

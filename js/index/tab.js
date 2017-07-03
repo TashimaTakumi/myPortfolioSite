@@ -2,18 +2,18 @@
 var w=Object();var p=Object();var c=Object();
 var b1=Object();var b2=Object();var b3=Object();
 
-window.onload=function(){
+function tab_init(){
 	w=document.getElementById("works");
 	p=document.getElementById("profile");
 	c=document.getElementById("contact_form");
 	b1=document.getElementById("b1");
 	b2=document.getElementById("b2");
 	b3=document.getElementById("b3");
-	
-	disp(1);
+
+	disp(0);
 };
 function disp(n){
-	
+
 	w.style.display="none";
 	p.style.display="none";
 	c.style.display="none";
