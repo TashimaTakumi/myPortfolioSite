@@ -10,7 +10,7 @@ function tab_init(){
 	b2=document.getElementById("b2");
 	b3=document.getElementById("b3");
 
-	disp(1);
+	disp(0);
 };
 function disp(n){
 
